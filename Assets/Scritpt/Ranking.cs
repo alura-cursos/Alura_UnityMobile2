@@ -27,9 +27,10 @@ public class Ranking : MonoBehaviour {
        
 	}
 	
-	public int AdicionarPontuacao(int pontos, string nome)
+	public string AdicionarPontuacao(int pontos, string nome)
     {
-        var id = this.listaDeColocados.Count * UnityEngine.Random.Range(1, 100000);
+       
+        var id = Guid.NewGuid().ToString();
         var novoColocado = new Colocado(nome, pontos, id);
         this.listaDeColocados.Add(novoColocado);
         this.listaDeColocados.Sort();
@@ -37,7 +38,7 @@ public class Ranking : MonoBehaviour {
         return id;
     }
     
-    public void AlterarNome(string novoNome, int id)
+    public void AlterarNome(string novoNome, string id)
     {
         foreach (var item in this.listaDeColocados)
         {
@@ -71,9 +72,9 @@ public class Colocado:IComparable
 {
     public string nome;
     public int pontos;
-    public int id;
+    public string id;
 
-    public Colocado(string nome, int pontos, int id)
+    public Colocado(string nome, int pontos, string id)
     {
         this.nome = nome;
         this.pontos = pontos;
