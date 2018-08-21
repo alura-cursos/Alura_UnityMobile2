@@ -25,4 +25,14 @@ public class ReservaDeInimigos : MonoBehaviour {
             this.reservaDeInimigos.Push(inimigo);
         }
     }
+
+    public GameObject PegarInimigo()
+    {
+        return this.reservaDeInimigos.Pop();
+    }
+
+    public bool TemInimigo()
+    {
+        return this.reservaDeInimigos.Count > 0;
+    }
 }

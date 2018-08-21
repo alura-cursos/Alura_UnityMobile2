@@ -7,13 +7,15 @@ public class Gerador : MonoBehaviour
     private Transform alvo;
     [SerializeField]
     private Pontuacao pontuacao;
-    [SerializeField]
-    private GameObject prefabInimigo;
+
     [SerializeField]
     private float tempo;
     [SerializeField]
     private float raio;
-    
+
+    [SerializeField]
+    private ReservaDeInimigos reservaDeInimigos;
+
     private void Start()
     {
         InvokeRepeating("Instanciar", 0f, this.tempo);
@@ -21,10 +23,14 @@ public class Gerador : MonoBehaviour
 
     private void Instanciar()
     {
-        var inimigo = GameObject.Instantiate(this.prefabInimigo);
-        this.DefinirPosicaoInimigo(inimigo);
-        inimigo.GetComponent<Seguir>().SetAlvo(this.alvo);
-        inimigo.GetComponent<Pontuavel>().SetPontuacao(this.pontuacao);
+        if (this.reservaDeInimigos.TemInimigo())
+        {
+            var inimigo = this.reservaDeInimigos.PegarInimigo();
+            inimigo.SetActive(true);
+            this.DefinirPosicaoInimigo(inimigo);
+            inimigo.GetComponent<Seguir>().SetAlvo(this.alvo);
+            inimigo.GetComponent<Pontuavel>().SetPontuacao(this.pontuacao);
+        }
     }
 
     private void DefinirPosicaoInimigo(GameObject inimigo)
