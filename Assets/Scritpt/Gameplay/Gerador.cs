@@ -26,7 +26,6 @@ public class Gerador : MonoBehaviour
         if (this.reservaDeInimigos.TemInimigo())
         {
             var inimigo = this.reservaDeInimigos.PegarInimigo();
-            inimigo.SetActive(true);
             this.DefinirPosicaoInimigo(inimigo);
             inimigo.GetComponent<Seguir>().SetAlvo(this.alvo);
             inimigo.GetComponent<Pontuavel>().SetPontuacao(this.pontuacao);

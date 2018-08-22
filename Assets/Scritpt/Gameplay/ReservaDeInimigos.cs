@@ -21,6 +21,8 @@ public class ReservaDeInimigos : MonoBehaviour {
         for(var i =0; i<this.quantidade; i++)
         {
             var inimigo = GameObject.Instantiate(this.prefab, this.transform);
+            var objetoDaReserva = inimigo.GetComponent<ObjetoDaReservaDeInimigos>();
+            objetoDaReserva.SetReserva(this);
             inimigo.SetActive(false);
             this.reservaDeInimigos.Push(inimigo);
         }
@@ -28,7 +30,15 @@ public class ReservaDeInimigos : MonoBehaviour {
 
     public GameObject PegarInimigo()
     {
-        return this.reservaDeInimigos.Pop();
+        var inimigo = this.reservaDeInimigos.Pop();
+        inimigo.SetActive(true);
+        return inimigo;
+    }
+
+    public void DevolverInimigo(GameObject inimigo)
+    {
+        inimigo.SetActive(false);
+        this.reservaDeInimigos.Push(inimigo);
     }
 
     public bool TemInimigo()

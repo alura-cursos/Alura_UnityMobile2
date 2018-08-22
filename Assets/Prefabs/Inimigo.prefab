@@ -25,6 +25,7 @@ GameObject:
   - component: {fileID: 114961902889299820}
   - component: {fileID: 114416686415520214}
   - component: {fileID: 114356344184244488}
+  - component: {fileID: 114692327528622816}
   m_Layer: 8
   m_Name: Inimigo
   m_TagString: Untagged
@@ -114,6 +115,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   alvo: {fileID: 0}
   forca: 5
+--- !u!114 &114692327528622816
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1134229065056836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44adf9f307f28764ebb7f938a8d4d0e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114961902889299820
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -130,6 +142,17 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 114356344184244488}
         m_MethodName: Pontuar
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 114692327528622816}
+        m_MethodName: Devolver
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
