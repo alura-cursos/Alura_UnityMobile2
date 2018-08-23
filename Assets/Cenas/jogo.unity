@@ -535,9 +535,10 @@ GameObject:
   - component: {fileID: 982870803}
   - component: {fileID: 982870802}
   - component: {fileID: 982870804}
+  - component: {fileID: 982870805}
   m_Layer: 0
   m_Name: Pontuacao
-  m_TagString: Untagged
+  m_TagString: "Pontua\xE7\xE3o"
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -559,6 +560,17 @@ MonoBehaviour:
       - m_Target: {fileID: 679329955}
         m_MethodName: AtualizarTexto
         m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 956519202}
+        m_MethodName: Play
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -591,6 +603,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b8cd1ab23a767c34988606ff67d335a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &982870805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 982870801}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 567131379b192074caefd848594232cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &996169613
