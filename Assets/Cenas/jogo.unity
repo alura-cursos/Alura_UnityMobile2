@@ -165,6 +165,24 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 867da2ed13811b347a09b4756abcd004, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &355698648 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1288704199317362, guid: 6fbcc97c6e3854a4bbe5058eacc39e19,
+    type: 2}
+  m_PrefabInternal: {fileID: 1634699634}
+--- !u!114 &355698649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 355698648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcfe7f6b7caa0994e813281f3c0a0c2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amplitude: 3
+  velocidade: 0.08
 --- !u!1001 &457752700
 Prefab:
   m_ObjectHideFlags: 0
@@ -206,7 +224,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1288704199317362, guid: 6fbcc97c6e3854a4bbe5058eacc39e19, type: 2}
       propertyPath: m_Name
-      value: Barreira Fixa (1)
+      value: Barreira Movel
       objectReference: {fileID: 0}
     - target: {fileID: 4631253430628302, guid: 6fbcc97c6e3854a4bbe5058eacc39e19, type: 2}
       propertyPath: m_LocalScale.x
@@ -355,6 +373,24 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 679329952}
+--- !u!1 &928548105 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1288704199317362, guid: 6fbcc97c6e3854a4bbe5058eacc39e19,
+    type: 2}
+  m_PrefabInternal: {fileID: 457752700}
+--- !u!114 &928548106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 928548105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcfe7f6b7caa0994e813281f3c0a0c2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amplitude: 2
+  velocidade: 0.05
 --- !u!1 &945209399
 GameObject:
   m_ObjectHideFlags: 0
@@ -1240,11 +1276,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4631253430628302, guid: 6fbcc97c6e3854a4bbe5058eacc39e19, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -4.29
+      value: -5.75
       objectReference: {fileID: 0}
     - target: {fileID: 4631253430628302, guid: 6fbcc97c6e3854a4bbe5058eacc39e19, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.25
+      value: -0.99
       objectReference: {fileID: 0}
     - target: {fileID: 4631253430628302, guid: 6fbcc97c6e3854a4bbe5058eacc39e19, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1272,7 +1308,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1288704199317362, guid: 6fbcc97c6e3854a4bbe5058eacc39e19, type: 2}
       propertyPath: m_Name
-      value: Barreira Fixa (2)
+      value: Barreira Movel
       objectReference: {fileID: 0}
     - target: {fileID: 4631253430628302, guid: 6fbcc97c6e3854a4bbe5058eacc39e19, type: 2}
       propertyPath: m_LocalScale.x
