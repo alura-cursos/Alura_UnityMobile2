@@ -4,8 +4,9 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Trilha
   - "Pontua\xE7\xE3o"
+  - Trilha
+  - Cenario
   layers:
   - Default
   - TransparentFX

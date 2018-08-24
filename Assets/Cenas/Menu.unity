@@ -1206,7 +1206,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mixer: {fileID: 24100000, guid: 32637b84897327e489cde36f2a9daf9b, type: 2}
-  parametroDoMixer: VolumeDaSFX
+  parametroDoMixer: VolumeDoSFX
 --- !u!4 &916219191
 Transform:
   m_ObjectHideFlags: 0
@@ -1758,6 +1758,7 @@ GameObject:
   - component: {fileID: 1495033870}
   - component: {fileID: 1495033869}
   - component: {fileID: 1495033871}
+  - component: {fileID: 1495033872}
   m_Layer: 0
   m_Name: Trilha
   m_TagString: Trilha
@@ -1870,6 +1871,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8cd1ab23a767c34988606ff67d335a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1495033872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1495033868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 567131379b192074caefd848594232cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sobrescreverExiste: 0
 --- !u!1 &1720931678
 GameObject:
   m_ObjectHideFlags: 0
@@ -2238,7 +2251,7 @@ GameObject:
   - component: {fileID: 1978566748}
   m_Layer: 0
   m_Name: Cenario
-  m_TagString: Untagged
+  m_TagString: Cenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class UnicaInstancia : MonoBehaviour
 {
+    [SerializeField]
+    private bool sobrescreverExiste;
     private void Start()
     {
         var outros = GameObject.FindGameObjectsWithTag(this.tag);
@@ -14,7 +16,14 @@ public class UnicaInstancia : MonoBehaviour
 
             if (outro != this.gameObject)
             {
-                GameObject.Destroy(outro);
+                if (this.sobrescreverExiste)
+                {
+                    GameObject.Destroy(outro);
+                }
+                else
+                {
+                    GameObject.Destroy(this.gameObject);
+                }
             }
         }
     }

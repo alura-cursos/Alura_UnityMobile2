@@ -617,6 +617,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 567131379b192074caefd848594232cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sobrescreverExiste: 1
 --- !u!1 &996169613
 GameObject:
   m_ObjectHideFlags: 0
