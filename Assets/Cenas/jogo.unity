@@ -262,8 +262,8 @@ MonoBehaviour:
   alvo: {fileID: 981026353}
   pontuacao: {fileID: 982870802}
   tempo: 1
-  raio: 3
-  reservaDeInimigos: {fileID: 0}
+  raio: 0
+  reservaDeInimigos: {fileID: 1217461480}
 --- !u!1 &679329952
 GameObject:
   m_ObjectHideFlags: 0
@@ -777,8 +777,8 @@ MonoBehaviour:
   alvo: {fileID: 981026353}
   pontuacao: {fileID: 982870802}
   tempo: 1
-  raio: 3
-  reservaDeInimigos: {fileID: 0}
+  raio: 0
+  reservaDeInimigos: {fileID: 1217461480}
 --- !u!4 &1028723155
 Transform:
   m_ObjectHideFlags: 0
@@ -1433,8 +1433,8 @@ MonoBehaviour:
   alvo: {fileID: 981026353}
   pontuacao: {fileID: 982870802}
   tempo: 1
-  raio: 3
-  reservaDeInimigos: {fileID: 0}
+  raio: 0
+  reservaDeInimigos: {fileID: 1217461480}
 --- !u!4 &1882994928
 Transform:
   m_ObjectHideFlags: 0
