@@ -263,7 +263,7 @@ MonoBehaviour:
   pontuacao: {fileID: 982870802}
   tempo: 1
   raio: 3
-  reservaDeInimigos: {fileID: 1217461480}
+  reservaDeInimigos: {fileID: 0}
 --- !u!1 &679329952
 GameObject:
   m_ObjectHideFlags: 0
@@ -530,9 +530,10 @@ GameObject:
   - component: {fileID: 982870803}
   - component: {fileID: 982870802}
   - component: {fileID: 982870804}
+  - component: {fileID: 982870805}
   m_Layer: 0
   m_Name: Pontuacao
-  m_TagString: Untagged
+  m_TagString: "Pontua\xE7\xE3o"
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -586,6 +587,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b8cd1ab23a767c34988606ff67d335a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &982870805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 982870801}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ad9d4bc382535941b2736db87ff40c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &996169613
@@ -766,7 +778,7 @@ MonoBehaviour:
   pontuacao: {fileID: 982870802}
   tempo: 1
   raio: 3
-  reservaDeInimigos: {fileID: 1217461480}
+  reservaDeInimigos: {fileID: 0}
 --- !u!4 &1028723155
 Transform:
   m_ObjectHideFlags: 0
@@ -1422,7 +1434,7 @@ MonoBehaviour:
   pontuacao: {fileID: 982870802}
   tempo: 1
   raio: 3
-  reservaDeInimigos: {fileID: 1217461480}
+  reservaDeInimigos: {fileID: 0}
 --- !u!4 &1882994928
 Transform:
   m_ObjectHideFlags: 0
